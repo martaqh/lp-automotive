@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import TheHeader from '@/components/TheHeader.vue';
 import HeroSection from '@/sections/HeroSection.vue';
+import TrySection from '@/sections/TrySection.vue';
+import PicturesSection from '@/sections/PicturesSection.vue';
 </script>
 
 <template>
@@ -8,12 +10,14 @@ import HeroSection from '@/sections/HeroSection.vue';
     <TheHeader class="limited-width" />
     <HeroSection />
     <TrySection />
+    <PicturesSection class="limited-width" />
   </main>
 </template>
 
 <style lang="scss">
 .app {
   font-family: $font-main;
+  background-color: $color-background;
 }
 
 .limited-width {

@@ -13,6 +13,7 @@ import TopNav from './TopNav.vue';
 
 <style scoped lang="scss">
 .header {
+  background-color: $color-background-light;
   padding: 30px;
   display: flex;
   justify-content: space-between;

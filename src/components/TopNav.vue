@@ -9,7 +9,7 @@ import BaseButton from './BaseButton.vue';
       <a class="top-nav__tab-bar__item">Oferta</a>
       <a class="top-nav__tab-bar__item">Salony Cupra</a>
     </ul>
-    <div class="nop-nav__buttons">
+    <div class="top-nav__buttons">
       <BaseButton text="3773917486" variant="borderless" />
       <BaseButton text="Zapytaj o ofertę" variant="transparent" />
       <BaseButton text="Umów jazdę próbną" variant="dark" />
@@ -23,11 +23,6 @@ import BaseButton from './BaseButton.vue';
   justify-content: space-between;
   align-items: center;
 
-  &__buttons {
-    display: flex;
-    justify-content: space-between;
-  }
-
   &__tab-bar {
     &__item {
       padding: 20px;
@@ -36,6 +31,12 @@ import BaseButton from './BaseButton.vue';
       font-family: $font-light;
       line-height: 162.5%;
     }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
   }
 }
 </style>

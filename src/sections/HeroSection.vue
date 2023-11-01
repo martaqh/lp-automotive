@@ -3,7 +3,7 @@ import BaseButton from '@/components/BaseButton.vue';
 </script>
 
 <template>
-  <div class="hero-section">
+  <section class="hero-section">
     <div class="hero-section__content limited-width">
       <h6 class="hero-section__heading"><span>Cupra</span> Formentor</h6>
       <h1 class="hero-section__slogan">
@@ -11,7 +11,7 @@ import BaseButton from '@/components/BaseButton.vue';
       </h1>
       <BaseButton text="Umów jazdę próbną" variant="light" />
     </div>
-  </div>
+  </section>
 </template>
 
 <style scoped lang="scss">
@@ -28,7 +28,6 @@ import BaseButton from '@/components/BaseButton.vue';
   &__heading {
     color: rgba(255, 255, 255, 0.5);
     font-size: 20px;
-    font-weight: 400;
     line-height: 120%;
     margin-bottom: 16px;
 
