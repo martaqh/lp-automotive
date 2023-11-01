@@ -52,20 +52,20 @@ import BaseButton from '@/components/BaseButton.vue';
     padding: 80px 0;
 
     &__image {
-      max-width: 800px;
-      max-height: 590px;
+      min-height: 590px;
+      width: 80%;
     }
     &__content {
       background-color: $color-background;
       display: flex;
       flex-direction: column;
-      padding: 0 0 0 177px;
+      padding: 0 0 64px 117px;
       height: fit-content;
-      transform: translateX(-85px);
+      transform: translateX(-20%);
 
       &.left {
-        transform: translateX(85px);
-        padding: 0 177px 0 0;
+        transform: translateX(20%);
+        padding: 0 117px 64px 0;
       }
 
       &__heading {
