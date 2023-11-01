@@ -7,7 +7,7 @@ import PicturesSection from '@/sections/PicturesSection.vue';
 
 <template>
   <main class="app">
-    <TheHeader class="limited-width" />
+    <TheHeader />
     <HeroSection />
     <TrySection />
     <PicturesSection class="limited-width" />
@@ -17,6 +17,7 @@ import PicturesSection from '@/sections/PicturesSection.vue';
 <style lang="scss">
 .app {
   font-family: $font-main;
+  max-width: 1920px;
   background-color: $color-background;
 }
 

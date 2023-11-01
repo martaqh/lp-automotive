@@ -4,18 +4,24 @@ import TopNav from './TopNav.vue';
 
 <template>
   <div class="header">
-    <a class="logo">
-      <img src="src/assets/cupra_logo.svg" />
-    </a>
-    <TopNav />
+    <div class="header__content limited-width">
+      <a class="logo">
+        <img src="src/assets/cupra_logo.svg" />
+      </a>
+      <TopNav />
+    </div>
   </div>
 </template>
 
 <style scoped lang="scss">
 .header {
   background-color: $color-background-light;
-  padding: 30px;
-  display: flex;
-  justify-content: space-between;
+
+  &__content {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 </style>
