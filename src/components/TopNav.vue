@@ -11,7 +11,7 @@ import BaseButton from './BaseButton.vue';
     </ul>
     <div class="nop-nav__buttons">
       <BaseButton text="3773917486" variant="borderless" />
-      <BaseButton text="Zapytaj o ofertę" />
+      <BaseButton text="Zapytaj o ofertę" variant="transparent" />
       <BaseButton text="Umów jazdę próbną" variant="dark" />
     </div>
   </div>
@@ -32,8 +32,8 @@ import BaseButton from './BaseButton.vue';
     &__item {
       padding: 20px;
       font-size: 1rem;
-      color: $color-font-grey;
-      font-weight: 300;
+      color: $color-font-dark;
+      font-family: $font-light;
       line-height: 162.5%;
     }
   }

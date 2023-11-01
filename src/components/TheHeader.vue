@@ -5,7 +5,7 @@ import TopNav from './TopNav.vue';
 <template>
   <div class="header">
     <a class="logo">
-      <img src="src/assets/cupra 1.svg" />
+      <img src="src/assets/cupra_logo.svg" />
     </a>
     <TopNav />
   </div>
@@ -13,8 +13,7 @@ import TopNav from './TopNav.vue';
 
 <style scoped lang="scss">
 .header {
-  margin: 0 0 30px 0;
-  padding-top: 30px;
+  padding: 30px;
   display: flex;
   justify-content: space-between;
 }

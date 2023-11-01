@@ -1,10 +1,16 @@
 @import url('https://db.onlinewebfonts.com/c/1a998736e1a95af302b555d9cf0f552b?family=Cupra');
+@import url(https://db.onlinewebfonts.com/c/d8c243c0372d796c35aac398a8e882a1?family=Cupra+Light);
 
-$font: Cupra, sans-serif;
+$font-main: Cupra, sans-serif;
+$font-light: 'Cupra Light', sans-serif;
 
 $color-background: #262421;
+
 $color-font-light: #fff;
-$color-font-dark: #000;
-$color-font-grey: #242221;
+$color-font-dark: #242221;
+$color-font-grey: rgba(255, 255, 255, 0.5);
 
 $color-focus-dark: #494949;
+
+$color-button-white: #fff;
+$color-button-beige: #dbd3cb;

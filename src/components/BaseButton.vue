@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const props = withDefaults(
   defineProps<{
-    variant: 'dark' | 'light' | 'borderless';
+    variant: 'dark' | 'light' | 'borderless' | 'transparent';
     text: string;
     destination?: string;
   }>(),
@@ -20,9 +20,19 @@ const props = withDefaults(
   border: 1px solid $color-font-dark;
   padding: 24px;
   color: $color-font-dark;
+  width: fit-content;
+  background-color: $color-button-beige;
 
   &:hover {
-    border: 2px solid $color-font-dark;
+    background-color: $color-button-white;
+  }
+
+  &.transparent {
+    background-color: inherit;
+
+    &:hover {
+      border: 2px solid $color-font-dark;
+    }
   }
 
   &.dark {
@@ -36,6 +46,7 @@ const props = withDefaults(
   }
 
   &.borderless {
+    background-color: inherit;
     border: none;
     font-weight: 500;
     font-size: 14px;
