@@ -24,8 +24,14 @@ const cardHeading = computed(() => {
 
 const techParams = computed(() => {
   return props.data.model === 'Born'
-    ? `Akumulator ${props.data.battery} kWh moc do ${props.data.enginePower} KM²`
-    : `Maksymalna prędkość: ${props.data.maxSpeed} KM/H Moc silnika: ${props.data.enginePower} KM`;
+    ? {
+        param1: `Akumulator ${props.data.battery} kWh`,
+        param2: `Moc do ${props.data.enginePower} KM²`
+      }
+    : {
+        param1: `Maksymalna prędkość: ${props.data.maxSpeed} KM/H`,
+        param2: `Moc silnika: ${props.data.enginePower} KM`
+      };
 });
 
 const formattedPrice = computed(() => {
@@ -39,7 +45,10 @@ const formattedPrice = computed(() => {
     <div class="carousel-card">
       <h2 class="carousel-card__heading">{{ cardHeading }}</h2>
       <img class="carousel-card__image" :src="data.imageUrl" />
-      <p class="carousel-card__tech-params">{{ techParams }}</p>
+      <div class="carousel-card__tech-params">
+        <p class="carousel-card__tech-params__item">{{ techParams.param1 }}</p>
+        <p class="carousel-card__tech-params__item">{{ techParams.param2 }}</p>
+      </div>
       <div class="carousel-card__purchase-details">
         <p class="carousel-card__purchase-details__item">
           Dostępny w leasingu <br />
@@ -66,14 +75,42 @@ const formattedPrice = computed(() => {
   align-items: center;
   justify-content: center;
   gap: 48px;
+  padding: 0 24px;
+
+  @include mobile {
+    gap: 36px;
+  }
 
   &__heading {
     font-size: 48px;
+
+    @include mobile {
+      font-size: 36px;
+    }
+  }
+
+  &__image {
+    @include mobile {
+      max-width: 400px;
+    }
+  }
+
+  &__tech-params {
+    display: flex;
+    @include mobile {
+      flex-direction: column;
+      text-align: center;
+    }
   }
 
   &__purchase-details {
     display: flex;
     gap: 48px;
+
+    @include mobile {
+      flex-direction: column;
+      gap: 16px;
+    }
 
     &__item {
       text-align: center;
