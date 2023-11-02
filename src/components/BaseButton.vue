@@ -1,22 +1,38 @@
 <script setup lang="ts">
+import { computed } from 'vue';
 const props = withDefaults(
   defineProps<{
     variant: 'dark' | 'light' | 'borderless' | 'transparent';
     text: string;
-    destination?: string;
+    linkTo?: string;
   }>(),
   {
     variant: 'light'
   }
 );
+
+const componentType = computed(() => {
+  return props.linkTo ? 'a' : 'button';
+});
+
+const buttonType = computed(() => {
+  return componentType.value === 'button' ? 'submit' : null;
+});
 </script>
 
 <template>
-  <a class="button" :class="props.variant" :href="destination">{{ text }}</a>
+  <component
+    :is="componentType"
+    class="base-button"
+    :class="props.variant"
+    :href="linkTo"
+    :type="buttonType"
+    >{{ text }}</component
+  >
 </template>
 
 <style scoped lang="scss">
-.button {
+.base-button {
   border: 1px solid $color-font-dark;
   padding: 24px;
   color: $color-font-dark;

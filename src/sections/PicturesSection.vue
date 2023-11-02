@@ -13,7 +13,7 @@ import BaseButton from '@/components/BaseButton.vue';
         <h1 class="pictures-section__row__content__slogan">
           Poczuj pełną wolność jazdy dzięki licznym innowacjom.
         </h1>
-        <BaseButton text="Umów jazdę próbną" variant="light" />
+        <BaseButton text="Umów jazdę próbną" variant="light" link-to="booking-section" />
       </div>
     </div>
     <div class="pictures-section__row reverse">
@@ -25,7 +25,7 @@ import BaseButton from '@/components/BaseButton.vue';
         <h1 class="pictures-section__row__content__slogan">
           Crossover emanujący gracją, dynamizmem i czystym wyrafinowaniem.
         </h1>
-        <BaseButton text="Umów jazdę próbną" variant="light" />
+        text="Umów jazdę próbną" variant="light" />
       </div>
     </div>
     <div class="pictures-section__row">
@@ -37,7 +37,7 @@ import BaseButton from '@/components/BaseButton.vue';
         <h1 class="pictures-section__row__content__slogan">
           Idealny komfort. Unikalny wystrój wnętrza stworzony w stylu <span>Cupry</span>.
         </h1>
-        <BaseButton text="Umów jazdę próbną" variant="light" />
+        <BaseButton text="Umów jazdę próbną" variant="light" link-to="booking-section" />
       </div>
     </div>
   </section>

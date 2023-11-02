@@ -9,7 +9,7 @@ import BaseButton from '@/components/BaseButton.vue';
       <h1 class="hero-section__slogan">
         Wejdź do świata Cupra. Poznaj prawdziwą moc i sportowego ducha marki.
       </h1>
-      <BaseButton text="Umów jazdę próbną" variant="light" />
+      <BaseButton text="Umów jazdę próbną" variant="light" link-to="booking-section" />
     </div>
   </section>
 </template>

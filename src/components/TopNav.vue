@@ -10,9 +10,9 @@ import BaseButton from './BaseButton.vue';
       <a class="top-nav__tab-bar__item">Salony Cupra</a>
     </ul>
     <div class="top-nav__buttons">
-      <BaseButton text="3773917486" variant="borderless" />
+      <BaseButton text="+48 58 506 65 65" variant="borderless" />
       <BaseButton text="Zapytaj o ofertę" variant="transparent" />
-      <BaseButton text="Umów jazdę próbną" variant="dark" />
+      <BaseButton text="Umów jazdę próbną" link-to="booking-section" variant="dark" />
     </div>
   </div>
 </template>

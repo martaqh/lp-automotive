@@ -30,4 +30,18 @@ import CarouselSection from '@/sections/CarouselSection.vue';
   margin: 0 auto;
   padding: 0;
 }
+
+.v-application {
+  [class*='text-'] {
+    font-family: $font-main, sans-serif !important;
+  }
+  font-family: $font-main, sans-serif !important;
+  opacity: 1;
+}
+
+// .v-label {
+//   //font-size: 13px !important;
+//   color: black !important;
+//   opacity: 1 !important;
+// }
 </style>
