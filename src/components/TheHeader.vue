@@ -5,7 +5,7 @@ import TopNav from './TopNav.vue';
 <template>
   <div class="header">
     <div class="header__content limited-width">
-      <a class="logo">
+      <a class="header__content__logo" href="/">
         <img src="src/assets/cupra_logo.svg" />
       </a>
       <TopNav />
@@ -17,11 +17,23 @@ import TopNav from './TopNav.vue';
 .header {
   background-color: $color-background-light;
 
+  @include tablet {
+    padding: 0 60px;
+  }
+
+  @include mobile {
+    padding: 0 24px;
+  }
+
   &__content {
     padding: 30px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include mobile {
+      justify-content: center;
+    }
   }
 }
 </style>

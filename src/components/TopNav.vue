@@ -2,7 +2,7 @@
 import BaseButton from './BaseButton.vue';
 </script>
 <template>
-  <div class="top-nav">
+  <nav class="top-nav">
     <ul class="top-nav__tab-bar">
       <a class="top-nav__tab-bar__item">Samochody</a>
       <a class="top-nav__tab-bar__item">Jazda próbna</a>
@@ -14,7 +14,7 @@ import BaseButton from './BaseButton.vue';
       <BaseButton text="Zapytaj o ofertę" variant="transparent" />
       <BaseButton text="Umów jazdę próbną" link-to="booking-section" variant="dark" />
     </div>
-  </div>
+  </nav>
 </template>
 
 <style lang="scss" scoped>
@@ -24,6 +24,13 @@ import BaseButton from './BaseButton.vue';
   align-items: center;
 
   &__tab-bar {
+    @include tablet {
+      display: none;
+    }
+
+    @include mobile {
+      display: none;
+    }
     &__item {
       padding: 20px;
       font-size: 1rem;
@@ -37,6 +44,10 @@ import BaseButton from './BaseButton.vue';
     display: flex;
     justify-content: space-between;
     gap: 24px;
+
+    @include mobile {
+      display: none;
+    }
   }
 }
 </style>
