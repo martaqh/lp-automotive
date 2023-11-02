@@ -18,6 +18,10 @@ const componentType = computed(() => {
 const buttonType = computed(() => {
   return componentType.value === 'button' ? 'submit' : null;
 });
+
+const scrollDestination = computed(() => {
+  return props.linkTo ? `#${props.linkTo}` : '';
+});
 </script>
 
 <template>
@@ -25,10 +29,11 @@ const buttonType = computed(() => {
     :is="componentType"
     class="base-button"
     :class="props.variant"
-    :href="linkTo"
+    :href="scrollDestination"
     :type="buttonType"
-    >{{ text }}</component
   >
+    {{ text }}
+  </component>
 </template>
 
 <style scoped lang="scss">

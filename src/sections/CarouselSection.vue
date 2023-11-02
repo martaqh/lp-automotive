@@ -72,7 +72,7 @@ const carsDetails = [
           variant="flat"
           color="white"
           height="50px"
-          width="50px"
+          width="20px"
           rounded="0"
           @click="props.onClick"
         >

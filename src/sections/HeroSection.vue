@@ -19,10 +19,28 @@ import BaseButton from '@/components/BaseButton.vue';
   height: 880px;
   background-image: url('src/assets/cupra_hero.svg');
 
+  @include tablet {
+    height: 700px;
+  }
+
+  @include mobile {
+    max-height: 500px;
+  }
+
   &__content {
     display: flex;
     flex-direction: column;
-    padding: 344px 0 0 0;
+    padding: 344px 48px 0 48px;
+
+    @include tablet {
+      padding: 200px 36px 0 36px;
+    }
+
+    @include mobile {
+      text-align: center;
+      align-items: center;
+      padding: 100px 24px;
+    }
   }
 
   &__heading {
@@ -42,6 +60,14 @@ import BaseButton from '@/components/BaseButton.vue';
     line-height: 107%;
     margin-bottom: 48px;
     color: $color-font-light;
+
+    @include tablet {
+      font-size: 48px;
+    }
+
+    @include mobile {
+      font-size: 36px;
+    }
   }
 }
 </style>
