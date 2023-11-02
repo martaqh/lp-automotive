@@ -43,6 +43,7 @@ const scrollDestination = computed(() => {
   color: $color-font-dark;
   width: fit-content;
   background-color: $color-button-beige;
+  text-align: center;
 
   &:hover {
     background-color: $color-button-white;

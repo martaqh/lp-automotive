@@ -63,7 +63,12 @@ const formattedPrice = computed(() => {
           <strong>{{ formattedPrice }} zł</strong>
         </p>
       </div>
-      <BaseButton text="Umów jazdę próbną" variant="dark" link-to="booking-section" />
+      <BaseButton
+        class="carousel-card__button"
+        text="Umów jazdę próbną"
+        variant="dark"
+        link-to="booking-section"
+      />
     </div>
   </v-carousel-item>
 </template>
@@ -121,6 +126,11 @@ const formattedPrice = computed(() => {
         font-size: 20px;
         line-height: 24px;
       }
+    }
+  }
+  &__button {
+    @include mobile {
+      width: 100%;
     }
   }
 }

@@ -13,7 +13,12 @@ import BaseButton from '@/components/BaseButton.vue';
         <h1 class="pictures-section__row__content__slogan">
           Poczuj pełną wolność jazdy dzięki licznym innowacjom.
         </h1>
-        <BaseButton text="Umów jazdę próbną" variant="light" link-to="booking-section" />
+        <BaseButton
+          class="pictures-section__row__content__button first"
+          text="Umów jazdę próbną"
+          variant="light"
+          link-to="booking-section"
+        />
       </div>
     </div>
     <div class="pictures-section__row reverse">
@@ -25,7 +30,12 @@ import BaseButton from '@/components/BaseButton.vue';
         <h1 class="pictures-section__row__content__slogan">
           Crossover emanujący gracją, dynamizmem i czystym wyrafinowaniem.
         </h1>
-        <BaseButton text="Umów jazdę próbną" variant="light" link-to="booking-section" />
+        <BaseButton
+          class="pictures-section__row__content__button second"
+          text="Umów jazdę próbną"
+          variant="light"
+          link-to="booking-section"
+        />
       </div>
     </div>
     <div class="pictures-section__row">
@@ -37,7 +47,12 @@ import BaseButton from '@/components/BaseButton.vue';
         <h1 class="pictures-section__row__content__slogan">
           Idealny komfort. Unikalny wystrój wnętrza stworzony w stylu <span>Cupry</span>.
         </h1>
-        <BaseButton text="Umów jazdę próbną" variant="light" link-to="booking-section" />
+        <BaseButton
+          class="pictures-section__row__content__button third"
+          text="Umów jazdę próbną"
+          variant="light"
+          link-to="booking-section"
+        />
       </div>
     </div>
   </section>
@@ -45,15 +60,43 @@ import BaseButton from '@/components/BaseButton.vue';
 
 <style scoped lang="scss">
 .pictures-section {
+  display: flex;
+  flex-direction: column;
   height: fit-content;
-  padding: 173px 0 96px;
+  padding: 173px 24px 96px;
+  gap: 124px;
+
+  @include tablet {
+    padding: 96px 24px;
+    gap: 80px;
+  }
+
+  @include mobile {
+    padding: 48px 0;
+    gap: 10px;
+  }
   &__row {
     display: flex;
-    padding: 80px 0;
+    height: 500px;
+
+    @include mobile {
+      flex-direction: column;
+      gap: 36px;
+      padding: 24px;
+      height: fit-content;
+    }
 
     &__image {
-      min-height: 590px;
-      width: 80%;
+      width: 160%;
+
+      @include mobile {
+        width: 100%;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
     &__content {
       background-color: $color-background;
@@ -63,9 +106,19 @@ import BaseButton from '@/components/BaseButton.vue';
       height: fit-content;
       transform: translateX(-20%);
 
+      @include mobile {
+        transform: translateX(0);
+        padding: 0;
+      }
+
       &.left {
         transform: translateX(20%);
         padding: 0 117px 64px 0;
+
+        @include mobile {
+          transform: translateX(0);
+          padding: 0;
+        }
       }
 
       &__heading {
@@ -74,6 +127,10 @@ import BaseButton from '@/components/BaseButton.vue';
         font-family: $font-light;
         line-height: 120%;
         margin-bottom: 16px;
+
+        @include mobile {
+          font-size: 16px;
+        }
       }
 
       &__slogan {
@@ -83,14 +140,40 @@ import BaseButton from '@/components/BaseButton.vue';
         margin-bottom: 48px;
         color: $color-font-light;
 
+        @include mobile {
+          font-size: 24px;
+          margin-bottom: 0;
+        }
+
         span {
           text-transform: uppercase;
+        }
+      }
+
+      &__button {
+        @include mobile {
+          width: 100%;
+          margin-top: 60px;
         }
       }
     }
   }
   .reverse {
     flex-direction: row-reverse;
+
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+  .first {
+    @include mobile {
+      display: none;
+    }
+  }
+  .second {
+    @include mobile {
+      display: none;
+    }
   }
 }
 </style>

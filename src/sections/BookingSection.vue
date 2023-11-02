@@ -150,6 +150,10 @@ const selectedItem = ref(items[0]);
   align-items: center;
   justify-content: center;
 
+  @include mobile {
+    padding: 60px 24px;
+  }
+
   &__content {
     max-width: 600px;
     height: fit-content;
