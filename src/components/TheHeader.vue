@@ -18,7 +18,7 @@ import TopNav from './TopNav.vue';
   background-color: $color-background-light;
 
   &__content {
-    padding: 30px;
+    padding: 30px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;

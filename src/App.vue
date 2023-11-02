@@ -4,6 +4,7 @@ import HeroSection from '@/sections/HeroSection.vue';
 import TrySection from '@/sections/TrySection.vue';
 import PicturesSection from '@/sections/PicturesSection.vue';
 import BookingSection from '@/sections/BookingSection.vue';
+import CarouselSection from '@/sections/CarouselSection.vue';
 </script>
 
 <template>
@@ -11,6 +12,7 @@ import BookingSection from '@/sections/BookingSection.vue';
     <TheHeader />
     <HeroSection />
     <TrySection />
+    <CarouselSection />
     <PicturesSection class="limited-width" />
     <BookingSection />
   </main>
