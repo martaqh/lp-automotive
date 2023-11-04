@@ -19,14 +19,26 @@ import CarouselSection from '@/sections/CarouselSection.vue';
 </template>
 
 <style lang="scss">
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transition: rotateX(-10deg);
+  }
+  to {
+    opacity: 1;
+    transition: rotateX(0);
+  }
+}
+
 .app {
   font-family: $font-main;
   max-width: 1920px;
   background-color: $color-background;
+  animation: transitionIn 1s;
 }
 
 .limited-width {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0;
 }
