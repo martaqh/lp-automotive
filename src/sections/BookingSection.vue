@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import BaseButton from '@/components/BaseButton.vue';
+import CheckboxButton from '@/components/CheckboxButton.vue';
 import { ref } from 'vue';
 const items = [
   {
@@ -102,16 +103,17 @@ const selectedItem = ref(items[0]);
             atrakcyjnych ofert/promocji produktów, akcesoriów i usług marki CUPRA w przyszłości.
           </p>
 
-          <v-checkbox
+          <CheckboxButton
+            id="consent"
             label="Zgadzam się na przetwarzanie moich danych osobowych przez Plichta spółka z ograniczoną
         odpowiedzialnością Spółka Komandytowa w celu przedstawienia mi informacji marketingowych i
         handlowych dotyczących produktów i usług marki CUPRA oraz innych powiązanych z marką CUPRA
         akcesoriów, produktów i usług motoryzacyjnych za pomocą:"
-          >
-          </v-checkbox>
-          <v-checkbox label="Email"></v-checkbox>
-          <v-checkbox label="Telefon"></v-checkbox>
-          <v-checkbox label="Wiadomość SMS/MMS"></v-checkbox>
+          />
+
+          <CheckboxButton id="consent-email" label="E-mail" />
+          <CheckboxButton id="consent-phone" label="Telefon" />
+          <CheckboxButton id="consent-message" label="Wiadomość SMS/MMS" />
 
           <p>
             Masz prawo do wglądu, modyfikacji, ograniczenia przetwarzania i usunięcia swoich danych

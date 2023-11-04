@@ -7,7 +7,7 @@ import BaseButton from './BaseButton.vue';
       <a class="top-nav__tab-bar__item">Samochody</a>
       <a class="top-nav__tab-bar__item">Jazda próbna</a>
       <a class="top-nav__tab-bar__item">Oferta</a>
-      <a class="top-nav__tab-bar__item">Salony Cupra</a>
+      <a class="top-nav__tab-bar__item">Salony <span>Cupra</span></a>
     </ul>
     <div class="top-nav__buttons">
       <BaseButton text="+48 58 506 65 65" variant="borderless" />
@@ -37,6 +37,10 @@ import BaseButton from './BaseButton.vue';
       color: $color-font-dark;
       font-family: $font-light;
       line-height: 162.5%;
+
+      @include desktop {
+        padding: 20px 16px;
+      }
     }
   }
 
@@ -44,12 +48,19 @@ import BaseButton from './BaseButton.vue';
     display: flex;
     justify-content: space-between;
     gap: 24px;
-    padding-left: 24px;
 
     :nth-child(1) {
       @include desktop {
         display: none;
       }
+
+      @include tablet {
+        display: none;
+      }
+    }
+
+    @include desktop {
+      margin-left: 32px;
     }
 
     @include mobile {
