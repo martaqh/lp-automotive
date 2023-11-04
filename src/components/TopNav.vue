@@ -44,6 +44,13 @@ import BaseButton from './BaseButton.vue';
     display: flex;
     justify-content: space-between;
     gap: 24px;
+    padding-left: 24px;
+
+    :nth-child(1) {
+      @include desktop {
+        display: none;
+      }
+    }
 
     @include mobile {
       display: none;

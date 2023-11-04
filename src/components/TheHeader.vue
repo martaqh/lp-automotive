@@ -26,7 +26,7 @@ import TopNav from './TopNav.vue';
   }
 
   &__content {
-    padding: 30px 0;
+    padding: 30px 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;

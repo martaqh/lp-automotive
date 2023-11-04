@@ -5,6 +5,7 @@ import TrySection from '@/sections/TrySection.vue';
 import PicturesSection from '@/sections/PicturesSection.vue';
 import BookingSection from '@/sections/BookingSection.vue';
 import CarouselSection from '@/sections/CarouselSection.vue';
+import TheFooter from '@/components/TheFooter.vue';
 </script>
 
 <template>
@@ -13,8 +14,9 @@ import CarouselSection from '@/sections/CarouselSection.vue';
     <HeroSection />
     <TrySection />
     <CarouselSection />
-    <PicturesSection class="limited-width" />
+    <PicturesSection />
     <BookingSection />
+    <TheFooter />
   </main>
 </template>
 

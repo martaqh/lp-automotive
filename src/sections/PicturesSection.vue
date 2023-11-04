@@ -3,7 +3,7 @@ import BaseButton from '@/components/BaseButton.vue';
 </script>
 
 <template>
-  <section class="pictures-section">
+  <section class="pictures-section limited-width">
     <div class="pictures-section__row">
       <div class="pictures-section__row__image">
         <img src="src/assets/cupra_meters.svg" />
