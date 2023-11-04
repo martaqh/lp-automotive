@@ -4,10 +4,10 @@ import BaseButton from './BaseButton.vue';
 <template>
   <nav class="top-nav">
     <ul class="top-nav__tab-bar">
-      <a class="top-nav__tab-bar__item">Samochody</a>
-      <a class="top-nav__tab-bar__item">Jazda próbna</a>
-      <a class="top-nav__tab-bar__item">Oferta</a>
-      <a class="top-nav__tab-bar__item">Salony <span>Cupra</span></a>
+      <a class="top-nav__tab-bar__item" href="/">Samochody</a>
+      <a class="top-nav__tab-bar__item" href="/">Jazda próbna</a>
+      <a class="top-nav__tab-bar__item" href="/">Oferta</a>
+      <a class="top-nav__tab-bar__item" href="/">Salony Cupra</a>
     </ul>
     <div class="top-nav__buttons">
       <BaseButton text="+48 58 506 65 65" variant="borderless" />

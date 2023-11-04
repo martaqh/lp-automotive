@@ -6,7 +6,7 @@ import TopNav from './TopNav.vue';
   <div class="header">
     <div class="header__content limited-width">
       <a class="header__content__logo" href="/">
-        <img src="src/assets/cupra_logo.svg" />
+        <img src="src/assets/cupra_logo.svg" alt="logo cupra" />
       </a>
       <TopNav />
     </div>

@@ -52,7 +52,7 @@ const selectedItem = ref(items[0]);
         >
           <template #selection="{ item }">
             <span class="booking-section__form__select__item">
-              <img :src="item.raw.imageUrl" />
+              <img :src="item.raw.imageUrl" :alt="item.raw.name" />
               <span>{{ item.raw.name }}</span>
             </span>
           </template>
@@ -60,7 +60,7 @@ const selectedItem = ref(items[0]);
             <v-list-item v-bind="props">
               <template #title>
                 <span class="booking-section__form__select__item">
-                  <img :src="item.raw.imageUrl" />
+                  <img :src="item.raw.imageUrl" :alt="item.raw.name" />
                   <span>{{ item.raw.name }}</span>
                 </span>
               </template>

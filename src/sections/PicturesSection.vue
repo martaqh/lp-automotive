@@ -6,7 +6,7 @@ import BaseButton from '@/components/BaseButton.vue';
   <section class="pictures-section limited-width">
     <div class="pictures-section__row">
       <div class="pictures-section__row__image">
-        <img src="src/assets/cupra_meters.svg" />
+        <img src="src/assets/cupra_meters.svg" alt="cupra meters" />
       </div>
       <div class="pictures-section__row__content">
         <h6 class="pictures-section__row__content__heading">Technologia</h6>
@@ -23,7 +23,7 @@ import BaseButton from '@/components/BaseButton.vue';
     </div>
     <div class="pictures-section__row reverse">
       <div class="pictures-section__row__image">
-        <img src="src/assets/cupra_beach.svg" />
+        <img src="src/assets/cupra_beach.svg" alt="cupra on the beach" />
       </div>
       <div class="pictures-section__row__content left">
         <h6 class="pictures-section__row__content__heading">Potęga designu</h6>
@@ -40,7 +40,7 @@ import BaseButton from '@/components/BaseButton.vue';
     </div>
     <div class="pictures-section__row">
       <div class="pictures-section__row__image">
-        <img src="src/assets/cupra_seats.svg" />
+        <img src="src/assets/cupra_seats.svg" alt="cupra seats" />
       </div>
       <div class="pictures-section__row__content">
         <h6 class="pictures-section__row__content__heading">Design wnętrza</h6>

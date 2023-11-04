@@ -53,7 +53,7 @@ const scrollDestination = computed(() => {
     background-color: inherit;
 
     &:hover {
-      border: 2px solid $color-font-dark;
+      outline: 2px solid $color-font-dark;
     }
   }
 

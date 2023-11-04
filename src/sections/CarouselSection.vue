@@ -64,7 +64,7 @@ const carsDetails = [
           rounded="0"
           @click="props.onClick"
         >
-          <img src="src/assets/carousel/icons/chevron_prev.svg" />
+          <img src="src/assets/carousel/icons/chevron_prev.svg" alt="chevron-previous" />
         </v-btn>
       </template>
       <template v-slot:next="{ props }">
@@ -76,7 +76,7 @@ const carsDetails = [
           rounded="0"
           @click="props.onClick"
         >
-          <img src="src/assets/carousel/icons/chevron_next.svg" />
+          <img src="src/assets/carousel/icons/chevron_next.svg" alt="chevron-next" />
         </v-btn>
       </template>
       <CarouselCard v-for="item of carsDetails" :key="carsDetails.indexOf(item)" :data="item" />

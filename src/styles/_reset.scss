@@ -133,4 +133,8 @@ table {
 }
 a {
   text-decoration: none;
+  color: inherit;
+  :hover {
+    cursor: pointer;
+  }
 }

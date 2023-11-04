@@ -44,7 +44,7 @@ const formattedPrice = computed(() => {
   <v-carousel-item cover>
     <div class="carousel-card">
       <h2 class="carousel-card__heading">{{ cardHeading }}</h2>
-      <img class="carousel-card__image" :src="data.imageUrl" />
+      <img class="carousel-card__image" :src="data.imageUrl" :alt="data.model" />
       <div class="carousel-card__tech-params">
         <p class="carousel-card__tech-params__item">{{ techParams.param1 }}</p>
         <p class="carousel-card__tech-params__item">{{ techParams.param2 }}</p>
