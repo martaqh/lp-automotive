@@ -38,6 +38,10 @@ import BaseButton from './BaseButton.vue';
       font-family: $font-light;
       line-height: 162.5%;
 
+      &:hover {
+        text-decoration: underline;
+      }
+
       @include desktop {
         padding: 20px 16px;
       }

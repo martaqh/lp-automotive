@@ -39,8 +39,8 @@
       padding: 4px 16px;
       height: 24px;
 
-      path {
-        stroke: red;
+      &:hover {
+        text-decoration: underline;
       }
     }
     :nth-child(1) {
