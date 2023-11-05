@@ -2,7 +2,8 @@
 import BaseButton from '@/components/BaseButton.vue';
 import CheckboxButton from '@/components/CheckboxButton.vue';
 import { ref } from 'vue';
-const items = [
+
+const cupraModels = [
   {
     name: 'Cupra Formentor',
     imageUrl: 'src/assets/select_cupra_formentor.svg',
@@ -26,7 +27,14 @@ const items = [
   }
 ];
 
-const selectedItem = ref(items[0]);
+const selectedModel = ref(cupraModels[0]);
+
+const bookingData = ref({
+  firstName: '',
+  lastName: '',
+  email: '',
+  phone: ''
+});
 </script>
 
 <template>
@@ -43,10 +51,10 @@ const selectedItem = ref(items[0]);
       <v-form class="booking-section__form">
         <v-select
           class="booking-section__form__select"
-          :items="items"
+          :items="cupraModels"
           item-title="name"
           item-value="id"
-          v-model="selectedItem"
+          v-model="selectedModel"
           variant="outlined"
           rounded="0"
         >
@@ -73,23 +81,34 @@ const selectedItem = ref(items[0]);
           label="Imię*"
           variant="underlined"
           required
+          v-model="bookingData.firstName"
+          ref="firstName"
+          :rules="[() => !!bookingData.firstName || 'To pole jest obowiązkowe.']"
         ></v-text-field>
         <v-text-field
           class="booking-section__form__text-field"
           label="Nazwisko (opcjonalnie)"
           variant="underlined"
+          v-model="bookingData.lastName"
+          ref="lastName"
         ></v-text-field>
         <v-text-field
           class="booking-section__form__text-field"
           label="Adres e-mail*"
           variant="underlined"
           required
+          v-model="bookingData.email"
+          ref="email"
+          :rules="[() => !!bookingData.email || 'To pole jest obowiązkowe.']"
         ></v-text-field>
         <v-text-field
           class="booking-section__form__text-field"
           label="Numer telefonu*"
           variant="underlined"
           required
+          v-model="bookingData.phone"
+          ref="phone"
+          :rules="[() => !!bookingData.phone || 'To pole jest obowiązkowe.']"
         ></v-text-field>
         <span class="booking-section__form__disclaimer">* Pole wymagane </span>
 
