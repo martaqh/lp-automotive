@@ -4,7 +4,7 @@ import CarouselCard from '@/components/CarouselCard.vue';
 const carsDetails = [
   {
     model: 'Formentor',
-    imageUrl: 'src/assets/carousel/cupra_formentor.svg',
+    imageUrl: '/src/assets/carousel/cupra_formentor.svg',
     maxSpeed: 204,
     enginePower: 150,
     monthly: 1439,
@@ -12,7 +12,7 @@ const carsDetails = [
   },
   {
     model: 'Formentor VZ',
-    imageUrl: 'src/assets/carousel/cupra_formentor_vz.svg',
+    imageUrl: '/src/assets/carousel/cupra_formentor_vz.svg',
     maxSpeed: 250,
     enginePower: 310,
     monthly: 1553,
@@ -20,7 +20,7 @@ const carsDetails = [
   },
   {
     model: 'Ateca',
-    imageUrl: 'src/assets/carousel/cupra_ateca.svg',
+    imageUrl: '/src/assets/carousel/cupra_ateca.svg',
     maxSpeed: 247,
     enginePower: 300,
     monthly: 2334,
@@ -28,11 +28,19 @@ const carsDetails = [
   },
   {
     model: 'Born',
-    imageUrl: 'src/assets/carousel/cupra_born.svg',
+    imageUrl: '/src/assets/carousel/cupra_born.svg',
     battery: 58,
     enginePower: 204,
     monthly: 1943,
     totalPrice: 179600
+  },
+  {
+    model: 'Leon',
+    imageUrl: 'src/assets/carousel/cupra_leon.svg',
+    maxSpeed: 245,
+    enginePower: 300,
+    monthly: 1553,
+    totalPrice: 152400
   },
   {
     model: 'Leon Sportstourer',
@@ -64,7 +72,7 @@ const carsDetails = [
           rounded="0"
           @click="props.onClick"
         >
-          <img src="src/assets/carousel/icons/chevron_prev.svg" alt="chevron-previous" />
+          <img src="/src/assets/carousel/icons/chevron_prev.svg" alt="chevron-previous" />
         </v-btn>
       </template>
       <template v-slot:next="{ props }">
@@ -76,7 +84,7 @@ const carsDetails = [
           rounded="0"
           @click="props.onClick"
         >
-          <img src="src/assets/carousel/icons/chevron_next.svg" alt="chevron-next" />
+          <img src="/src/assets/carousel/icons/chevron_next.svg" alt="chevron-next" />
         </v-btn>
       </template>
       <CarouselCard v-for="item of carsDetails" :key="carsDetails.indexOf(item)" :data="item" />

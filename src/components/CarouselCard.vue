@@ -17,9 +17,13 @@ const props = defineProps<{
 }>();
 
 const cardHeading = computed(() => {
-  return props.data.model === 'Born'
-    ? `Nowa CUPRA ${props.data.model}`
-    : `CUPRA ${props.data.model}`;
+  if (props.data.model === 'Born') {
+    return `Nowa CUPRA ${props.data.model}`;
+  } else if (props.data.model.includes('Leon')) {
+    return props.data.model;
+  } else {
+    return `CUPRA ${props.data.model}`;
+  }
 });
 
 const techParams = computed(() => {

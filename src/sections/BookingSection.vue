@@ -6,24 +6,24 @@ import { ref } from 'vue';
 const cupraModels = [
   {
     name: 'Cupra Formentor',
-    imageUrl: 'src/assets/select_cupra_formentor.svg',
+    imageUrl: '/src/assets/select_cupra_formentor.svg',
     selected: true
   },
   {
     name: 'Cupra Leon',
-    imageUrl: 'src/assets/select_cupra_leon.svg'
+    imageUrl: '/src/assets/select_cupra_leon.svg'
   },
   {
-    name: 'Cupra Leon Sport',
-    imageUrl: 'src/assets/select_cupra_leon_s.svg'
+    name: 'Cupra Leon Sportstourer',
+    imageUrl: '/src/assets/select_cupra_leon_s.svg'
   },
   {
     name: 'Cupra Ateca',
-    imageUrl: 'src/assets/select_cupra_ateca.svg'
+    imageUrl: '/src/assets/select_cupra_ateca.svg'
   },
   {
     name: 'Nowa Cupra Born',
-    imageUrl: 'src/assets/select_nowa_cupra_born.svg'
+    imageUrl: '/src/assets/select_nowa_cupra_born.svg'
   }
 ];
 
