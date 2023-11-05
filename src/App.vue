@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import TheHeader from '@/components/TheHeader.vue';
 import HeroSection from '@/sections/HeroSection.vue';
-import TrySection from '@/sections/TrySection.vue';
 import PicturesSection from '@/sections/PicturesSection.vue';
 import BookingSection from '@/sections/BookingSection.vue';
 import CarouselSection from '@/sections/CarouselSection.vue';
@@ -12,7 +11,6 @@ import TheFooter from '@/components/TheFooter.vue';
   <main class="app">
     <TheHeader />
     <HeroSection />
-    <TrySection />
     <CarouselSection />
     <PicturesSection />
     <BookingSection />
@@ -52,10 +50,4 @@ import TheFooter from '@/components/TheFooter.vue';
   font-family: $font-main, sans-serif !important;
   opacity: 1;
 }
-
-// .v-label {
-//   //font-size: 13px !important;
-//   color: black !important;
-//   opacity: 1 !important;
-// }
 </style>

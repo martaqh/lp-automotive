@@ -91,7 +91,7 @@ const carsDetails = [
   padding: 104px 0;
 
   @include mobile {
-    padding: 80px 0;
+    padding: 80px 0 0 0;
   }
 
   &__swiper {

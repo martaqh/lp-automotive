@@ -1,5 +1,4 @@
 import './styles/index.scss';
-
 import 'vuetify/dist/vuetify.min.css';
 
 import { createApp } from 'vue';

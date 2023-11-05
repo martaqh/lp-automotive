@@ -217,7 +217,7 @@ const bookingData = ref({
     }
 
     &__text-field {
-      color: black;
+      color: $color-font-black;
       font-family: $font-main;
     }
 

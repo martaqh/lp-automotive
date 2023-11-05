@@ -91,16 +91,18 @@ const formattedPrice = computed(() => {
 
     @include mobile {
       font-size: 36px;
+      text-align: center;
     }
   }
 
   &__image {
     @include mobile {
-      max-width: 400px;
+      max-width: 300px;
     }
   }
 
   &__tech-params {
+    font-size: 14px;
     display: flex;
     @include mobile {
       flex-direction: column;

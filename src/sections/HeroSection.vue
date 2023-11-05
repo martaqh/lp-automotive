@@ -24,7 +24,7 @@ import BaseButton from '@/components/BaseButton.vue';
   }
 
   @include mobile {
-    max-height: 500px;
+    height: fit-content;
   }
 
   &__content {
@@ -44,7 +44,7 @@ import BaseButton from '@/components/BaseButton.vue';
   }
 
   &__heading {
-    color: rgba(255, 255, 255, 0.5);
+    color: $color-font-grey;
     font-size: 20px;
     line-height: 120%;
     margin-bottom: 16px;
