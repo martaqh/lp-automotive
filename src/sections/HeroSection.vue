@@ -17,7 +17,7 @@ import BaseButton from '@/components/BaseButton.vue';
 <style scoped lang="scss">
 .hero-section {
   height: 880px;
-  background-image: url('src/assets/cupra_hero.svg');
+  background-image: url('/src/assets/cupra_hero.svg');
 
   @include tablet {
     height: 700px;
