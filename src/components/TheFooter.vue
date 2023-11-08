@@ -10,10 +10,10 @@
       </div>
       <div class="footer__content__social-media">
         <a href="https://vimeo.com/">
-          <img src="/src/assets/footer/icons/vimeo_icon.svg" />
+          <img src="/src/assets/vimeo_icon.svg" />
         </a>
         <a href="https://www.instagram.com/">
-          <img src="/src/assets/footer/icons/instagram_icon.svg" />
+          <img src="/src/assets/instagram_icon.svg" />
         </a>
       </div>
     </div>
