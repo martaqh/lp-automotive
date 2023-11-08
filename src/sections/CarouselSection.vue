@@ -28,7 +28,7 @@ const carsDetails = [
   },
   {
     model: 'Born',
-    imageUrl: '/src/assets/carousel_cupra_born.svg',
+    imageUrl: '/assets/carousel_cupra_born.svg',
     battery: 58,
     enginePower: 204,
     monthly: 1943,

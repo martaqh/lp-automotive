@@ -6,7 +6,7 @@ import { ref } from 'vue';
 const cupraModels = [
   {
     name: 'Cupra Formentor',
-    imageUrl: '/src/assets/select_cupra_formentor.svg',
+    imageUrl: '/assets/select_cupra_formentor.svg',
     selected: true
   },
   {
