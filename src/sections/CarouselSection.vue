@@ -4,7 +4,7 @@ import CarouselCard from '@/components/CarouselCard.vue';
 const carsDetails = [
   {
     model: 'Formentor',
-    imageUrl: '/src/assets/carousel_cupra_formentor.svg',
+    imageUrl: '/assets/carousel_cupra_formentor.svg',
     maxSpeed: 204,
     enginePower: 150,
     monthly: 1439,
@@ -12,7 +12,7 @@ const carsDetails = [
   },
   {
     model: 'Formentor VZ',
-    imageUrl: '/src/assets/carousel_cupra_formentor_vz.svg',
+    imageUrl: '/assets/carousel_cupra_formentor_vz.svg',
     maxSpeed: 250,
     enginePower: 310,
     monthly: 1553,
@@ -20,7 +20,7 @@ const carsDetails = [
   },
   {
     model: 'Ateca',
-    imageUrl: '/src/assets/carousel_cupra_ateca.svg',
+    imageUrl: '/assets/carousel_cupra_ateca.svg',
     maxSpeed: 247,
     enginePower: 300,
     monthly: 2334,
@@ -36,7 +36,7 @@ const carsDetails = [
   },
   {
     model: 'Leon',
-    imageUrl: '/src/assets/carousel_leon.svg',
+    imageUrl: '/assets/carousel_leon.svg',
     maxSpeed: 245,
     enginePower: 300,
     monthly: 1553,
@@ -44,7 +44,7 @@ const carsDetails = [
   },
   {
     model: 'Leon Sportstourer',
-    imageUrl: '/src/assets/carousel_leon_sportstourer.svg',
+    imageUrl: '/assets/carousel_leon_sportstourer.svg',
     maxSpeed: 250,
     enginePower: 310,
     monthly: 1601,

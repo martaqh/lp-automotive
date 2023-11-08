@@ -11,19 +11,19 @@ const cupraModels = [
   },
   {
     name: 'Cupra Leon',
-    imageUrl: '/src/assets/select_cupra_leon.svg'
+    imageUrl: '/assets/select_cupra_leon.svg'
   },
   {
     name: 'Cupra Leon Sportstourer',
-    imageUrl: '/src/assets/select_cupra_leon_s.svg'
+    imageUrl: '/assets/select_cupra_leon_s.svg'
   },
   {
     name: 'Cupra Ateca',
-    imageUrl: '/src/assets/select_cupra_ateca.svg'
+    imageUrl: '/assets/select_cupra_ateca.svg'
   },
   {
     name: 'Nowa Cupra Born',
-    imageUrl: '/src/assets/select_nowa_cupra_born.svg'
+    imageUrl: '/assets/select_nowa_cupra_born.svg'
   }
 ];
 
